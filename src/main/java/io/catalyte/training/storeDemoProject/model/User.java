@@ -1,4 +1,4 @@
-package io.catalyte.training.storeDemoProject.models;
+package io.catalyte.training.storeDemoProject.model;
 
 import java.util.Collection;
 import javax.persistence.Entity;
