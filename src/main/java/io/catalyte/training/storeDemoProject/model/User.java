@@ -2,6 +2,8 @@ package io.catalyte.training.storeDemoProject.model;
 
 import java.util.Collection;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import org.springframework.security.core.GrantedAuthority;
@@ -11,6 +13,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Table(name = "user_table")
 public class User implements UserDetails {
   @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
   private String username;
